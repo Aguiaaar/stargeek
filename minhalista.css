@@ -1,0 +1,148 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 10% 90%;
+    grid-template-areas: 
+    "a a a a c c c c c c c c"
+    "a a a a p p p p p p p p";
+}
+
+header{
+    grid-area: c;
+    background: linear-gradient( #56A292 31.25%, #1C8080 100%, #1C8080 100%);
+    font-size: 2.75rem;
+    font-family: 'Archivo Narrow', sans-serif;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+aside{
+    grid-area: a;
+    background: linear-gradient(180deg, rgba(86, 162, 146, 0.943769) 0%, rgba(116, 191, 157, 0.943769) 100%);
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+main{
+    grid-area: p;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 60px;
+}
+
+.cards > .card > .botao {
+    background: #410936;
+    width: 215px;
+    height: 65px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.cards{
+    display: flex;  
+    margin-bottom: 25px;
+    column-gap: 20px;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    min-width: 30%;
+
+}
+
+.imagem {
+    width: 215px;
+    height: 270px;
+}
+.imagem > img {
+    width: 100%;
+    height: 100%;
+}
+
+.botao > a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: right;
+    padding-top: 10%;
+    padding-right: 5%;
+    font-size: 1.5rem;
+    
+}
+
+aside > .menu > a > i{
+    color: white;
+    font-size: 3.7rem;
+    padding-left: 3%;
+    display: inline-block;
+}
+aside > .menu > i{
+    color: white;
+    font-size: 3.7rem;
+    padding-left: 3%;
+    display: none;
+}
+
+.conteudo > li{
+    font-size: 40px;
+    font-weight: 400;
+    padding-top: 50px;
+    border-bottom: solid white 1px;
+}
+
+aside > ul > li{
+    display: flex;
+    justify-content: left;
+    padding-left: 3%;
+    list-style: none;
+    color: white;
+    font-family: 'Archivo Narrow', sans-serif;
+}
+
+.config{
+    padding-top: 30px;
+    font-size: 1.5rem;
+}
+
+@media (max-width:500px){
+    .container{
+        height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 10% 90%;
+        grid-template-areas: 
+        "a a a a c c c c c c c c"
+        "p p p p p p p p p p p p";
+    }
+    aside:hover > ul{
+        background: linear-gradient(180deg, rgba(86, 162, 146, 0.943769) 0%, rgba(116, 191, 157, 0.943769) 100%);
+        display: block;
+    }
+    aside > ul{
+        display: none;
+
+    }
+    aside > .menu {
+        display: flex;
+    }
+    aside > .menu > i{
+        display: inline-block;
+    }
+    .conteudo > li{
+        font-size: 20px;
+    }
+}
+

@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 10% 90%;
+    grid-template-areas: 
+    "i i i i c c c c c c c c "
+    "i i i i p p p p p p p p";
+}
+
+header{
+    grid-area: c;
+    background-color: green;
+    background: linear-gradient(180deg, #56A292 31.25%, #1C8080 100%, #1C8080 100%);
+    color: white;
+    font-size: 48px;
+    font-family: 'Archivo Narrow', sans-serif;
+    text-align: center;
+}
+
+main{
+    grid-area: p;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: salmon;
+}
+aside{
+    grid-area: i;
+    background-color: yellow;
+    background-image: url(imagens/login.jpg);
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+
+}
+form > label{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 400px;
+    color: rgb(41, 40, 40);
+    text-align: center;
+    margin-bottom: 20px;
+    column-gap: 10px;
+}
+.formulario{
+    background-image: url(imagens/bgsplash.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 800px;
+    padding: 165px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ form > input{
+    height: 55px;
+    width: 480px;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 2rem;
+    border: none;
+    border-radius: 50px;
+    background-color: #E9E9E9;
+    color: rgba(131, 131, 131, 1);
+}
+
+.inputcb{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    color: rgba(131, 131, 131, 1);
+    text-align: center;
+
+}
+.inputcb [type="checkbox"]{
+    width: 25px;
+    height: 25px;
+}
+.btn1{
+    border-radius: 50px;
+    text-decoration: none;
+    background-color: #4B538B;
+    color: white;
+    height: 70px;
+    width: 260px;
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+}
+.btn1:hover{
+    background-color: white;
+    color: black;
+    border: 3px solid black;
+    transition: 5ms;
+}
+@media (max-width:1200px){
+    .container{
+        height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 10% 90%;
+        grid-template-areas: 
+        "c c c c c c c c c c c c "
+        "p p p p p p p p p p p p";
+    }
+    main{
+        background-image: url(imagens/login.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: 100vw;
+        height: 100vh;
+    }
+    aside{
+        display: hidden;
+    }
+    form > input{
+        height: 55px;
+        width: 360px;
+    }
+    
+    
+
+}
+@media (max-width:800px){
+    .container{
+        height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 10% 90%;
+        grid-template-areas: 
+        "c c c c c c c c c c c c "
+        "p p p p p p p p p p p p";
+    }
+    main{
+        background-image: url(imagens/login.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: 100vw;
+        height: 100vh;
+    }
+    aside{
+        display: hidden;
+    }
+
+    .formulario{
+        background-image: url(imagens/bgsplash.png);
+        width: 500px;
+        padding: 120px;
+    }
+    form > input{
+        width: 240px;
+        height: 30px;
+    }
+    form > label {
+        font-size: 1.5rem;
+    }
+    .inputcb{
+        font-size: 1.5rem;
+    }
+    .inputcb [type="checkbox"]{
+        width: 20px;
+        height: 20px;
+    }
+    .btn1{
+        height: 50px;
+        width: 130px;
+        margin: 0 auto;
+}
+}

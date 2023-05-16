@@ -1,4 +1,3 @@
-const mensagem = document.querySelector ("#mensagem");
 const formulario = document.getElementById ("iformulario");
 const nome = document.getElementById ("inome");
 const email = document.getElementById ("imail");

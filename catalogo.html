@@ -14,49 +14,49 @@
  
 </head>
 <body>
-<div class="container">
-    <header>
-        <p>Catálogo</p>
-    </header>
-    <main>
-        <form action="minhalista.html">
-            <label for="nome" class="lnome">
-                <p>Nome</p>
-            </label>
-            <input type="text" placeholder=" Digite o nome do produto" id="inome" name="nnome" class="nome" required>
+    <div class="container">
+        <header>
+            <p>Catálogo</p>
+        </header>
+        <main>
+            <form>
+                <label for="nome" class="lnome">
+                    <p>Nome</p>
+                </label>
+                <input type="text" placeholder=" Digite o nome do produto" id="inome" name="nnome" class="nome">
 
-            <label for="conteudo" class="lconteudo">
-                <p>Conteúdo</p>
-            </label>
-            <select name="nconteudo" id="iconteudo" class="conteudo" required>
-                <option value="F"> Filmes</option>
-                <option value="S"> Séries</option>
-                <option value="L"> Livros</option>
-                <option value="J"> Jogos</option>
-                <option value="HQ"> HQ's</option>
-            </select>
-            <label for="">
+                <label for="conteudo" class="lconteudo">
+                    <p>Conteúdo</p>
+                </label>
+                <select name="nconteudo" id="iconteudo" class="conteudo" >
+                    <option value="F"> Filmes</option>
+                    <option value="S"> Séries</option>
+                    <option value="L"> Livros</option>
+                    <option value="J"> Jogos</option>
+                    <option value="HQ"> HQ's</option>
+                </select>
+                <label for="">
 
-                <p>Avaliação: 
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                </p>
+                    <p>Avaliação: 
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </p>
 
-            </label>
-            <textarea name="nreview" id="ireview" cols="75" rows="25">
-            </textarea>
-            <div class="formbtn">
-                <input type="reset" class="btn1" value="Excluir" >
-                <input type="submit" class="btn2" value="Adicionar">
-            </div>
+                </label>
+                <textarea name="nreview" id="ireview" cols="75" rows="25">
+                </textarea>
+                <div class="formbtn">
+                    <input type="file" name="nfoto" id="foto">
+                    <button class="btn1" id="btn1" > Adicionar</button>
 
-        </form>
+                </div>
 
-    </main>
+            </form>
+        </main>
 </div>
-    
+    <script src="catalogo.js"></script>
 </body>
 </html>

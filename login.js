@@ -9,6 +9,13 @@ formulario.onsubmit = (evento) =>{
     dados.forEach((elemento) => {
         if (elemento.email === email.value && elemento.senha === senha.value){
             evento.preventDefault();
+            let dados = JSON.parse(sessionStorage.getItem("logado")) || [];
+            dados.push(
+                {
+                    email :email.value
+                }
+            )
+            sessionStorage.setItem("logado", JSON.stringify(dados));
             window.location.assign("minhalista.html");   
             alert("Perfil logado com sucesso");
             return true;
@@ -21,3 +28,4 @@ formulario.onsubmit = (evento) =>{
 
     });
 }
+

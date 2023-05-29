@@ -8,10 +8,11 @@
     height: 100vh;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 10% 90%;
+    grid-template-rows: 10% 80% 10%;
     grid-template-areas: 
     "a a a a c c c c c c c c"
-    "a a a a p p p p p p p p";
+    "a a a a p p p p p p p p"
+    "a a a a f f f f f f f f";
 }
 
 header{
@@ -38,13 +39,7 @@ main{
     align-items: center;
     justify-content: center;
     padding: 30px 60px;
-}
-
-.cards > .card > .botao {
-    background: #410936;
-    width: 215px;
-    height: 65px;
-    border-radius: 0px 0px 10px 10px;
+    
 }
 
 .cards{
@@ -58,29 +53,67 @@ main{
     justify-content: center;
     align-items: center;
 }
-.card {
-    min-width: 30%;
-
+.cardnome{
+    font-size: 2rem;
+    font-family: 'PT Sans', sans-serif;
+    text-align: center;
+    background-color: #410936;
+    color: white;
+    max-width: 215px;
+    max-height: 270px;
 }
-
-.imagem {
+.cardimagem {
     width: 215px;
     height: 270px;
+
 }
-.imagem > img {
+
+.cardimagem > img {
     width: 100%;
     height: 100%;
 }
 
-.botao > a{
-    text-decoration: none;
+.cardinfo{
     color: white;
+    background-color: #410936;
     display: flex;
-    justify-content: right;
-    padding-top: 10%;
-    padding-right: 5%;
     font-size: 1.5rem;
-    
+    justify-content: space-between;
+    border-radius: 0px, 20px;
+}
+
+
+
+
+.btn{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 2rem;
+    text-decoration: none;  
+    border-radius: 15px;
+    width: 355px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(214, 2, 87);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.btn1, .btn2{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 2rem;
+    text-decoration: none;  
+    border-radius: 15px;
+    width: 355px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    background-color: rgba(75, 83, 139, 1);
+    color: white;
+    border: none;
+    align-items: center;
 }
 
 aside > .menu > a > i{
@@ -96,7 +129,7 @@ aside > .menu > i{
     display: none;
 }
 
-.conteudo > li{
+.conteudoaside > li{
     font-size: 40px;
     font-weight: 400;
     padding-top: 50px;
@@ -116,6 +149,15 @@ aside > ul > li{
     padding-top: 30px;
     font-size: 1.5rem;
 }
+
+footer{
+    grid-area: f;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
 
 @media (max-width:500px){
     .container{

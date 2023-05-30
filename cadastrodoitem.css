@@ -35,6 +35,9 @@ main > form > textarea{
     border-radius: 15px;
     border: none;
     color: rgba(131, 131, 131, 1);
+    font-size: 2rem;
+    max-width: 560px;
+    max-height: 360px;
 
 }
 main {
@@ -45,7 +48,7 @@ main {
     margin-top: 50px;
 }
 
-.formbtn > .btn1{
+.formbtn > .btn1, .btn2{
     font-family: 'PT Sans', sans-serif;
     font-size: 2rem;
     text-decoration: none;  
@@ -62,6 +65,18 @@ main {
     color: white;
     border: none;
 }
+.btn2{
+    background-color: white;
+    color: black;
+    text-decoration: none;
+}
+
+a{
+    color: rgba(131, 131, 131, 1);
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
 label > p > i{
     color: #D9D9D9;
 }
@@ -69,6 +84,8 @@ label > p > i:hover{
     color:  rgba(240, 179, 0, 1);
     cursor: pointer ;
 }
+
+
 @media (max-width:700px) {
     main > form > .nome, .conteudo{
         width: 400px;

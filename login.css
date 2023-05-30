@@ -90,6 +90,13 @@ form{
     width: 25px;
     height: 25px;
 }
+a{
+    color: rgba(131, 131, 131, 1);
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px;
+}
 .btn1{
     border-radius: 50px;
     text-decoration: none;

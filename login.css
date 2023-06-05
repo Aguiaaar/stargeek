@@ -46,8 +46,6 @@ form > label{
     font-size: 2rem;
     font-weight: 400px;
     color: rgb(41, 40, 40);
-    text-align: center;
-    margin-bottom: 20px;
     column-gap: 10px;
 }
 .formulario{
@@ -80,7 +78,7 @@ form{
 
 .inputcb{
     font-family: 'Roboto', sans-serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 400;
     color: rgba(131, 131, 131, 1);
     text-align: center;
@@ -90,6 +88,8 @@ form{
     width: 25px;
     height: 25px;
 }
+
+
 a{
     color: rgba(131, 131, 131, 1);
     font-size: 1rem;
@@ -97,13 +97,14 @@ a{
     justify-content: center;
     margin: 10px 0px;
 }
+
 .btn1{
     border-radius: 50px;
     text-decoration: none;
     background-color: #4B538B;
     color: white;
-    height: 70px;
-    width: 260px;
+    height: 60px;
+    width: 180px;
     text-align: center;
     font-family: 'PT Sans', sans-serif;
     font-size: 2rem;
@@ -172,20 +173,22 @@ a{
     form > input{
         width: 240px;
         height: 30px;
+        font-size: 1.25rem;
     }
     form > label {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
     .inputcb{
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
     .inputcb [type="checkbox"]{
         width: 20px;
         height: 20px;
     }
     .btn1{
-        height: 50px;
-        width: 130px;
+        height: 40px;
+        width: 100px;
         margin: 0 auto;
+        font-size: 1.25rem;
 }
 }

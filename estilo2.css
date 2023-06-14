@@ -7,15 +7,11 @@
 
 
 body{
-    background-image: url(./imagens/homepage.jpg);
+    background-image: url(./imagens/homepage.jpg); 
     width: 100vw;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
+    height: 100%;
     font-family: 'Archivo Narrow', sans-serif;
+    background-color: #74bf9df1 ;
 }
 
 .container{
@@ -91,6 +87,7 @@ text-align: right;
     font-size: 2rem;
     font-weight: 400;
     display: flex;
+
 }
 .btn1:hover{
     border: solid black 2px;
@@ -129,6 +126,7 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 .stargeek > p {
     font-size: 1.5rem;
@@ -148,7 +146,7 @@ main{
 }
 
 .stargeek::after{
-    content: "uiweg";
+    content: "";
     background: #FFFFFF;
     border-radius: 500px;
     filter: blur(25px);
@@ -167,14 +165,15 @@ main{
 }
 footer{
     grid-area: r;
-    background: linear-gradient(180deg, rgba(86, 162, 146, 0.943769) 0%, rgba(116, 191, 157, 0.943769) 100%);
+    background: linear-gradient(180deg, #56a292f1 0%, #74bf9df1 100%);
+    
 }
 @media (max-width:800px){
     .container{
     
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 15vh 70vh 15vh;
+        grid-template-rows: auto auto auto;
         grid-template-areas: 
         "c"
         "p"
@@ -183,5 +182,12 @@ footer{
 }
     .barrap{
         flex-direction: column;
+    }
+    footer{
+        height: 80px;
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        
     }
 }

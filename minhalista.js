@@ -22,8 +22,10 @@ function carregarCatalogo(){
     dados.forEach((elemento, indice) => { 
         if(elemento.email == emaillogado){ 
         let divcard = document.createElement("div"); 
-        divcard.innerHTML = `<div class="cardimagem"> <img src="imagens/${elemento.foto}"> </div> <div class="cardnome">${elemento.nome} <p>${elemento.descricao}</p></div> <div class="cardinfo"> 
-        <i class="bi bi-pencil-fill" onclick="editar(${indice})"></i> 
+        divcard.innerHTML = `<div class="cardimagem"> <img src="imagens/${elemento.foto}"> </div> 
+        <div class="cardnome">${elemento.nome} <p>${elemento.descricao}</p></div> 
+        <div class="cardinfo"> 
+        <i class="bi bi-pencil-fill" id="editar" onclick="editar(${indice})"></i> 
         <div class="excluir"><i class="bi bi-trash3-fill" onclick="excluir(${indice})"></i></div> 
         </div>`; 
 

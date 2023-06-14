@@ -16,7 +16,6 @@
 
 header{
     grid-area: c;
-    background-color: green;
     background: linear-gradient(180deg, #56A292 31.25%, #1C8080 100%, #1C8080 100%);
     color: white;
     font-size: 48px;
@@ -34,7 +33,6 @@ main{
 }
 aside{
     grid-area: i;
-    background-color: yellow;
     background-image: url(imagens/login.jpg);
     height: 100%;
     width: 100%;
@@ -156,7 +154,7 @@ a{
     }
     main{
         background-image: url(imagens/login.jpg);
-        background-size: 100%;
+        background-size: 100vh;
         background-repeat: no-repeat;
         width: 100vw;
         height: 100vh;

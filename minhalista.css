@@ -52,28 +52,30 @@ main{
 } 
 
 
-
 .cards{ 
-    display: flex;   
+    display: flex;  
+    justify-content: center; 
+    align-items: center;  
+    flex-wrap: wrap; 
     margin-bottom: 25px; 
     column-gap: 20px; 
-    flex-wrap: wrap; 
     row-gap: 20px; 
     height: 100%; 
     width: 100%; 
-    justify-content: center; 
-    align-items: center; 
+
+
 
 } 
 
 .cardnome{ 
-    font-size: 2rem; 
+    font-size: 1.5rem; 
     font-family: 'PT Sans', sans-serif; 
     text-align: center; 
     background-color: #410936; 
     color: white; 
     max-width: 215px; 
     max-height: 270px; 
+
 
 } 
 
@@ -87,18 +89,29 @@ main{
 .cardimagem > img { 
     width: 100%; 
     height: 100%; 
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 
 } 
+#editar{
+    color: #74BF9D;
+}
 
-  
+.excluir {
+    color: #E4710A;
+    
+}
 
 .cardinfo{ 
-    color: white; 
+    padding: 10px;
     background-color: #410936; 
     display: flex; 
     font-size: 1.25rem; 
     justify-content: space-around; 
     border-radius: 0px, 20px; 
+    border-end-end-radius: 15px;
+    border-end-start-radius: 15px;
+    
 
 } 
 
@@ -174,18 +187,21 @@ aside > ul > li{
         height: 100vh; 
         display: grid; 
         grid-template-columns: repeat(12, 1fr); 
-        grid-template-rows: 10% 90%; 
+        grid-template-rows: 10% auto; 
         grid-template-areas:  
         "a a a a c c c c c c c c" 
         "p p p p p p p p p p p p"; 
 
     } 
-
     .btn{ 
         width: 160px; 
-        height: 100px; 
+        height: 50px; 
         font-size: 1.5rem; 
         border-radius: 5px; 
+        border-radius: 15px;
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
 
     } 
 
@@ -208,6 +224,7 @@ aside > ul > li{
         display: inline-block; 
 
     } 
+
 
     .conteudoaside > li{ 
         font-size: 24px; 
